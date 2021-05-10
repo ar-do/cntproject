@@ -1,0 +1,27 @@
+body {
+  background-color: #f8f9fa;
+}
+
+#login_mask {
+  width:350px;
+  background-color:#28A745;
+  margin:auto;
+  margin-top:100px;
+  border-radius:.25rem;
+  color: white;
+  padding:10px 10px 10px 10px;
+}
+
+.link_s1 {
+  color:white;
+  margin-top:5px;
+}
+.link_s1:hover {
+  color:#cccccc;
+}
+.logo_box {
+  margin:auto;
+  margin-top:100px;
+  margin-bottom: -80px;
+  width:300px;
+}

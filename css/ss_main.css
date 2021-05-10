@@ -1,0 +1,130 @@
+
+/* Styling for Posts */
+#post_frame {
+  width:700px;
+  margin:auto;
+}
+.blocker {
+  height:100px;
+}
+.post_shell {
+  background-color: #f8f9fa;
+  margin:auto;
+  margin-top:50px;
+  padding-bottom:10px;
+  padding-top:10px;
+  width:100%;
+  padding-left:5px;
+}
+.align-right {
+  float:right;
+}
+.align-left {
+  float:left;
+}
+.align-center {
+  margin-top:2px;
+}
+.post_controls_link {
+/*  border:1px solid #28A745; */
+  border-radius:.25rem;
+  height:38px;
+  width:200px;
+  color:#28A745;
+  text-align: center;
+}
+
+.post_controls_link:hover {
+  background-color: #28A745;
+  border: white;
+  color:white;
+}
+.post_controls_link_username {
+  height:38px;
+  width:80%;
+  color:black;
+}
+.post_controls_username {
+  text-align: center;
+  font-size:1.5em;
+  margin-top:2px;
+}
+.post_controls_link_userpicture {
+  width:20%;
+  height:38px;
+
+/*  border-right:1px solid #28A745; */
+}
+.post_inner {
+  margin:auto;
+  min-height:50px;
+  width:98%;
+  padding: 3px 3px 3px 3px;
+  background-color:white;
+  border-radius:.25rem;
+  border:1px solid #28A745;
+}
+.navbar {
+  position: fixed;
+  top:0;
+  width:100%;
+}
+.post_controls{
+  background-color:#f8f9fa;
+  margin:auto;
+  height:80px;
+  width:98%;
+  color:#28A745;
+  padding-top:5px;
+}
+.post_commentary {
+  margin:auto;
+  width:98%;
+  border-top:solid 1px black;
+  background-color:white;
+}
+
+.image_navbar {
+  max-width:100px;
+  height:auto;
+}
+
+/* Foooter */
+#footer_frame {
+  width:100%;
+  position:fixed;
+  bottom:0;
+  opacity: 1;
+}
+
+.btnAdd {
+  border-radius:50%;
+  float:right;
+  margin-right:100px;
+  height:50px;
+  width:50px;
+  margin-bottom:30px;
+  display:block;
+  text-align: center;
+  line-height: .25em;
+}
+.comment_box_blocker {
+  height:55px;
+}
+.comment_box {
+  height:40px;
+  width:100%;
+  border:black 1px solid;
+  padding:5px;
+}
+.smallerwidth {
+  width:635px;
+  float:left;
+}
+.makemesmaller {
+  margin-top:-10px!important;
+}
+.makemealsosmall {
+  margin-top:-5px!important;
+  margin-right:-5px!important;
+}
