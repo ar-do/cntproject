@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/armindoroci/registry/php:7.0-apache
+FROM registry.gitlab.com/ar-do/registry/php:7.0-apache
 RUN mkdir /var/www/html/cntproject
 COPY php/*.php /var/www/html/cntproject/
 COPY css/*.css /var/www/html/cntproject/
