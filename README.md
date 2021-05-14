@@ -68,3 +68,7 @@ packages:
 runcmd:
 - sudo apt-get install mysql-server
 ```
+
+Container Registry
+
+https://gitlab.com/ar-do/cntproject/container_registry
