@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  annotations:
+  labels:
+    app.kubernetes.io/name: cntproject
+  name: cntproject
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app.kubernetes.io/name: cntproject
+  template:
+    metadata:
+      labels:
+        app.kubernetes.io/name: cntproject
+    spec:
+      containers:
+      - image: registry.gitlab.com/ar-do/cntproject/cntproject
+        imagePullPolicy: IfNotPresent
+        name: cntproject        
+        # Volumes im Container
+        volumeMounts:
+        - mountPath: "/var/www/html/cntproject/"
+          subPath: myspace
+          name: "web-storage"
+      # Volumes in Host
+      volumes:
+      - name: web-storage
+        persistentVolumeClaim:
+          claimName: data-claim
