@@ -1,0 +1,17 @@
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cntproject
+  labels:
+    app: cntproject
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /cntproject/
+        pathType: Prefix
+        backend:
+          service:
+            name: cntproject
+            port:
+              number: 80
