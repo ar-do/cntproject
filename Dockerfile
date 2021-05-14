@@ -1,4 +1,4 @@
-FROM registry.gitlab.com/ar-do/cntproject/php:7.0-apache
+FROM registry.gitlab.com/mbernet/registry/php:7.0-apache
 RUN mkdir /var/www/html/cntproject
 RUN mkdir /var/www/html/cntproject/php
 RUN mkdir /var/www/html/cntproject/css
