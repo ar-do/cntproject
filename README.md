@@ -171,6 +171,11 @@ ALTER TABLE `posts`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=31;
 COMMIT;
 ```
+
+### Ingress aufsetzten
+tbd
+### Deployment
+tbd
 Container Registry
 
 https://gitlab.com/ar-do/cntproject/container_registry
