@@ -1,5 +1,3 @@
-TBD
-
 ## Installation
 
 ### Kubernetes Umgebung aufsetzen
