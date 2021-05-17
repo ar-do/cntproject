@@ -175,7 +175,22 @@ COMMIT;
 ### Ingress aufsetzten
 tbd
 ### Deployment
-tbd
+
+Container Image für Kubernetes aufbereiten
+
+```
+kubectl create deployment cntproject --image=registry.gitlab.com/ar-do/cntproject/cntproject
+kubectl expose deployment/cntproject --port 80 --type="LoadBalancer"
+kubectl apply -f https://raw.githubusercontent.com/ar-do/cntproject/main/ingress.yaml
+```
+
+Die Applikation läuft anschliessend auf folgender URL
+
+http://10.2.39.3/cntproject/
+
+![image](https://user-images.githubusercontent.com/79870123/118462490-03b45e00-b6ff-11eb-91c4-84329aff5da4.png)
+
+
 ### Architektur
 tbd
 
