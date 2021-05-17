@@ -176,6 +176,9 @@ COMMIT;
 tbd
 ### Deployment
 tbd
+### Architektur
+tbd
+
 Container Registry
 
 https://gitlab.com/ar-do/cntproject/container_registry
