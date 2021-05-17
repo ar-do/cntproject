@@ -173,7 +173,30 @@ COMMIT;
 ```
 
 ### Ingress aufsetzten
-tbd
+
+Ingress wird über eine YAML Datei aufgesetzt:
+
+```
+apiVersion: networking.k8s.io/v1
+kind: Ingress
+metadata:
+  name: cntproject
+  labels:
+    app: cntproject
+spec:
+  rules:
+  - http:
+      paths:
+      - path: /cntproject/
+        pathType: Prefix
+        backend:
+          service:
+            name: cntproject
+            port:
+              number: 80
+```
+
+
 ### Deployment
 
 Container Image für Kubernetes aufbereiten
@@ -191,9 +214,8 @@ http://10.2.39.3/cntproject/
 ![image](https://user-images.githubusercontent.com/79870123/118462490-03b45e00-b6ff-11eb-91c4-84329aff5da4.png)
 
 
-### Architektur
-tbd
+### Container Registry
 
-Container Registry
+Das Container Image befindet sich in der Container Registry von Gitlab.
 
 https://gitlab.com/ar-do/cntproject/container_registry
