@@ -16,7 +16,7 @@ spec:
         app.kubernetes.io/name: cntproject
     spec:
       containers:
-      - image: registry.gitlab.com/ar-do/cntproject/cntproject
+      - image: registry.gitlab.com/ar-do/cntproject/cntproject:V1.0
         imagePullPolicy: IfNotPresent
         name: cntproject        
         # Volumes im Container
