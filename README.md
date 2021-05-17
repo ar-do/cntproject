@@ -172,6 +172,37 @@ ALTER TABLE `posts`
 COMMIT;
 ```
 
+### Container Image builden
+
+Login in Registry
+
+```
+buildah login registry.gitlab.com
+```
+
+Image Builden
+
+```
+git clone https://github.com/ar-do/cntproject
+cd cntproject/
+buildah bud -t registry.gitlab.com/ar-do/cntproject/cntproject/V1.0 . 
+```
+
+Image in Registry pushen
+
+```
+buildah push registry.gitlab.com/ar-do/cntproject/cntproject/V1.0
+```
+
+YAML Datei für das Deployment muss noch angepasst werden. Nach dem doppelpunkt kommt jeweils die aktuelle Versionsnummer.
+```
+      containers:
+      - image: registry.gitlab.com/ar-do/cntproject/cntproject:V1.0
+        imagePullPolicy: IfNotPresent
+        name: cntproject    
+```
+
+
 ### Ingress aufsetzten
 
 Ingress wird über eine YAML Datei aufgesetzt:
